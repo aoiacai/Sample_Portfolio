@@ -1,0 +1,89 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+/* コンテンツ全体のコンテナ */
+.content-container {
+  display: flex; /* Flexboxレイアウトを使用 */
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  height: 446px; /* 画像の高さに合わせる */
+}
+
+/* 画像の親要素に適用するスタイル */
+.image-container {
+
+  border-radius: 50%; /* 画像を円形に切り取る */
+  overflow: hidden; /* 親要素からはみ出る部分を隠す */
+}
+
+/* 画像に適用するスタイル */
+.image-container img {
+  width: 100%; /* 画像を親要素に合わせて拡大 */
+  height: 100%; /* アスペクト比を維持して画像を表示 */
+}
+
+/* テキストのコンテナ */
+.text-container {
+  width: 50%; /* 親要素の幅の50% */
+  height: 100%;
+  padding-left: 20px; /* 画像とテキストの間隔を設定 */
+  box-sizing: border-box; /* パディングを要素の幅に含める */
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+}
+.scrollable-text {
+  overflow: auto; /* テキストが要素のサイズを超えた場合にスクロール可能にする */
+  max-height: 400px;
+}
+.parent-container {
+  display: grid;
+  place-items: center;
+}
