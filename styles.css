@@ -58,15 +58,20 @@ section h2 {
 
 /* 画像の親要素に適用するスタイル */
 .image-container {
-
+  width:50%;
+  height: 100%;
   border-radius: 50%; /* 画像を円形に切り取る */
   overflow: hidden; /* 親要素からはみ出る部分を隠す */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 画像に適用するスタイル */
 .image-container img {
-  width: 100%; /* 画像を親要素に合わせて拡大 */
-  height: 100%; /* アスペクト比を維持して画像を表示 */
+  width:100%;
+  max-width: 446px;
+  height:auto;
 }
 
 /* テキストのコンテナ */
